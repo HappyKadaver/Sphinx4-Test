@@ -1,0 +1,12 @@
+#JSGF V1.0
+grammar test;
+
+public <basicCmd> = <start> <command> <end>;
+public <test> = du wird immer besser;
+
+<command> = <action> <object>;
+<action> = öffnen | entfernt | bewege;
+<object> = ([das | ein] Fenster | [die | eine] Datei);
+
+<start> = (bitte | könnte du | oh großer Computer) *;
+<end> = [ bitte | dank ];
